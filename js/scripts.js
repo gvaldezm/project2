@@ -21,7 +21,7 @@ else {
       $(".moviesSci-fi").show();
     }
     else if (movieTypeInput==="Horror"){
-      $(".moviesHorrir").show();
+      $(".moviesHorror").show();
     }
     else if (movieTypeInput==="Animated"){
       $(".moviesAnimated").show();
