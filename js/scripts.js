@@ -9,6 +9,11 @@ $(function() {
   console.log (movieTypeInput);
   alert("Hi " + nameInput + " we'll show you some " + movieTypeInput + " movies for you")
 $(".clearcl").hide();
+
+if (ageInput<18){
+  alert(nameInput + " some of the movies might not be appropiate for people under " + ageInput)
+}
+else {
   if (movieTypeInput==="comedies"){
     $(".moviescomedies").show();
   }
@@ -24,6 +29,7 @@ $(".clearcl").hide();
     else {
       $(".moviesOther").show();
     }
+  }
     event.preventDefault();
   });
 });
