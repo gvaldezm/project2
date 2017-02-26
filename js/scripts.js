@@ -13,7 +13,6 @@ $(".clearcl").hide();
 if (ageInput<18){
   alert(nameInput + " some of the movies might not be appropiate for people under " + ageInput)
 }
-else {
   if (movieTypeInput==="comedies"){
     $(".moviescomedies").show();
   }
@@ -28,7 +27,6 @@ else {
     }
     else {
       $(".moviesOther").show();
-    }
   }
     event.preventDefault();
   });
