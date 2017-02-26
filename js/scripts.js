@@ -7,13 +7,22 @@ $(function() {
   console.log (ageInput);
   console.log (nameInput);
   console.log (movieTypeInput);
-  alert("Hi " + nameInput + " we'll show you some movies for you")
+  alert("Hi " + nameInput + " we'll show you some " + movieTypeInput + " movies for you")
 $(".clearcl").hide();
-  if (ageInput>=18){
-    $(".moviesover").show();
+  if (movieTypeInput==="comedies"){
+    $(".moviescomedies").show();
   }
+    else if (movieTypeInput==="Sci-fi"){
+      $(".moviesSci-fi").show();
+    }
+    else if (movieTypeInput==="Horror"){
+      $(".moviesHorrir").show();
+    }
+    else if (movieTypeInput==="Animated"){
+      $(".moviesAnimated").show();
+    }
     else {
-      $(".moviesunder").show();
+      $(".moviesOther").show();
     }
     event.preventDefault();
   });
